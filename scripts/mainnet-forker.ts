@@ -16,7 +16,7 @@ const main = async () => {
   let AmtAMin = ethers.parseUnits("99000", 6);
   let AmtBMin = ethers.parseUnits("99000", 18);
 
-  let deadline = (await helpers.time.latest()) + 3000;
+  let deadline = (await helpers.time.latest()) + 2000;
 
   await helpers.impersonateAccount(theAddressIFoundWithUSDCAndDAI);
   const impersonatedSigner = await ethers.getSigner(
